@@ -1,0 +1,35 @@
+{
+  "name": "typeset-brunch",
+  "version": "0.0.1",
+  "description": "Typeset Brunch HTML.",
+  "main": "index.coffee",
+  "scripts": {
+    "test": "mocha && istanbul report text-summary lcov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prashnts/typeset-brunch.git"
+  },
+  "keywords": [
+    "brunchplugin",
+    "typeset"
+  ],
+  "author": {
+    "name": "Prashant Sinha",
+    "email": "prashant+npm@noop.pw",
+    "url": "https://noop.pw"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prashnts/typeset-brunch/issues"
+  },
+  "homepage": "https://github.com/prashnts/typeset-brunch#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "codeclimate-test-reporter": "^0.3.3",
+    "coffee-coverage": "^1.0.1",
+    "coffee-script": "^1.10.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.0.2"
+  }
+}
