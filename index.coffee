@@ -1,4 +1,7 @@
 'use strict'
+fs = require 'fs'
+glob = require 'glob'
+typeset = require 'typeset'
 
 
 class Typeset
@@ -7,14 +10,17 @@ class Typeset
   extension: 'html'
 
   constructor: (config) ->
-    @config = Object.assign @defaultOpts, config.plugins.typeset
+    defaults =
+      pattern: "#{config.paths?.public}/**/*.html"
+    @config = Object.assign defaults, config.plugins.typeset
 
-  defaultOpts:
-    disable: 'ligatures'
-
-  optimize: (file) ->
-    {data, path, map = null} = file
-
+  onCompile: ->
+    files = glob.sync @config.pattern
+    files.map (fname) =>
+      content = fs.readFileSync fname, 'utf-8'
+      transformed = typeset content, @config.tweaks
+      fs.writeFileSync fname, transformed
+    console.log "typeset: post-processed #{files.length} files"
 
 
 module.exports = Typeset
