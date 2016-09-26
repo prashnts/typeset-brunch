@@ -1,7 +1,7 @@
 {
   "name": "typeset-brunch",
-  "version": "0.0.1",
-  "description": "Typeset Brunch HTML.",
+  "version": "0.1.0",
+  "description": "Brunch interface for Typeset, an HTML preprocessor for web typography.",
   "main": "index.coffee",
   "scripts": {
     "test": "mocha && istanbul report text-summary lcov"
