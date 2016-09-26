@@ -37,6 +37,7 @@ describe 'Typeset', ->
     it 'applies supplied params', ->
       plug = new Typeset
         paths: public: 'should'
+        plugins: {}
 
       plug.onCompile()
       fs.readFile 'should/not/process/this.html', 'utf-8', (_, dat) ->

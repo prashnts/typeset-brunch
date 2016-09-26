@@ -1,6 +1,6 @@
 {
   "name": "typeset-brunch",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Brunch interface for Typeset, an HTML preprocessor for web typography.",
   "main": "index.coffee",
   "scripts": {
