@@ -4,12 +4,11 @@
 
 [![Build Status](https://travis-ci.org/prashnts/typeset-brunch.svg?branch=master)](https://travis-ci.org/prashnts/typeset-brunch)
 [![Test Coverage](https://codeclimate.com/github/prashnts/typeset-brunch/badges/coverage.svg)](https://codeclimate.com/github/prashnts/typeset-brunch/coverage)
+[![Greenkeeper badge](https://badges.greenkeeper.io/prashnts/typeset-brunch.svg)](https://greenkeeper.io/)
 
 [![NPM](https://nodei.co/npm/typeset-brunch.png?mini=true)](https://nodei.co/npm/typeset-brunch/)
 
 ## Usage
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/prashnts/typeset-brunch.svg)](https://greenkeeper.io/)
 Install the plugin via `npm` with:
 
 ```shell
