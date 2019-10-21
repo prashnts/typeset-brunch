@@ -34,7 +34,7 @@
     "mock-fs": "^4.0.0"
   },
   "dependencies": {
-    "glob": "^7.1.0",
+    "glob": "^7.1.5",
     "typeset": "^0.2.2"
   }
 }
